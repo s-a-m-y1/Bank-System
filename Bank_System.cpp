@@ -41,7 +41,6 @@ void ShowManageUsersMenue();
 void ShowTransactionsMenue();
 void Login();
 ///___________________________________________________________________________________________________________________________________________________________________///
-
 vector<string>Split_string ( string Word,  string Dlimter)
 {
     string Add_Word_data;
@@ -957,7 +956,7 @@ St_User u;
 string Username= Read_Username();
 if (find_User_By_Usernaem(Username ,Users1 ,u ))
 {
-    Show_User_screan();
+    Show_User_Card(u);
 }
 else
  cout << "\n Client with  username " << Username << "Is Not Found ! ";
@@ -1028,7 +1027,7 @@ string Accountnumber= Read_account_number();
 
 if (find_client_By_Account_number(Accountnumber ,client ,u ))
 {
-    Show_Client_screan();
+    Show_client_Card(u);
 }
 else
  cout << "\n Client with  Accountnumber " << Accountnumber << "Is Not Found ! ";
@@ -1353,7 +1352,7 @@ void Login()
     {
         system("cls");
 cout<<"===================================="<<endl;
-cout << " Login Screan  \t";cout<<"Hello (:"<<endl;
+cout << " Login Screan  \t";cout<<"Hello  :) "<<endl;
 cout<<"===================================="<<endl;
   
 if (Login_check)
